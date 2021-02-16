@@ -25,8 +25,10 @@ const UniqueList = () => {
   };
 
   const clearList = () => {
-    setItems([]);
-    setInputValue("");
+    if (items.length > 0) {
+      setItems([]);
+      setInputValue("");
+    }
   };
 
   return (
