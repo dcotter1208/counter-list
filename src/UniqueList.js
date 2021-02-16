@@ -6,18 +6,20 @@ const UniqueList = () => {
   const [inputValue, setInputValue] = useState("");
 
   const addItem = () => {
-    const isUnique = !items.includes(inputValue) && inputValue !== "";
+    const trimmedValue = inputValue.trim();
+    const isUnique = !items.includes(inputValue) && trimmedValue !== "";
 
     if (isUnique) {
-      setItems([...items, inputValue]);
+      setItems([...items, trimmedValue]);
       setInputValue("");
     }
   };
 
   const removeItem = () => {
-    const hasItemInList = items.includes(inputValue);
+    const trimmedValue = inputValue.trim();
+    const hasItemInList = items.includes(trimmedValue);
     if (hasItemInList) {
-      setItems(items.filter((item) => item !== inputValue));
+      setItems(items.filter((item) => item !== trimmedValue));
       setInputValue("");
     }
   };
