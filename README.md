@@ -2,6 +2,6 @@
 
 npm i && npm start
 
-# To run at tests for hyphenate util
+# To run tests for hyphenate util
 
 npm run test
