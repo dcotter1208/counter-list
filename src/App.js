@@ -1,10 +1,17 @@
-import "./App.css";
+import "./styles/App.css";
 import Counter from "./Counter";
+import UniqueList from "./UniqueList";
 
 function App() {
   return (
     <div className='App'>
-      <Counter />
+      <div>
+        <Counter />
+      </div>
+      <hr></hr>
+      <div>
+        <UniqueList />
+      </div>
     </div>
   );
 }

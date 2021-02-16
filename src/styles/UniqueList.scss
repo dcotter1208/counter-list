@@ -1,0 +1,36 @@
+.list-container {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  min-height: 400px;
+  padding: 10px;
+  box-shadow: 2px 2px lightgray;
+}
+
+.list-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-input {
+  margin: 0 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.button-container {
+  margin-top: 5px;
+}
+
+button {
+  background: white;
+  color: black;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.items {
+  text-align: left;
+}
